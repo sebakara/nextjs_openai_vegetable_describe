@@ -17,6 +17,7 @@ export default function Home() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const submitValue = getUserPrompt(inputValue);
+    console.log("input data: ",submitValue);
     await fetchData("/api/openai", "POST", submitValue);
   };
 
@@ -33,10 +34,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="container">
-        <h1 className={inter.className}>NextJS OpenAI Boilerplate</h1>
+        <h1 className={inter.className}>NextJS OpenAI get vegetable description</h1>
         <p className={inter.className}>
           {" "}
-          Test this boilerplate: Enter an animal and it will generate a pet name
+          Enter a name of a vegetable and it will generate a description and you will know 
           for you.
         </p>
         <form>
@@ -44,7 +45,7 @@ export default function Home() {
           <TextInput
             value={inputValue}
             onChange={handleInputChange}
-            placeholder={"Enter an animal"}
+            placeholder={"Enter a vegetable"}
           />
           <SubmitButton onClick={handleSubmit} disabled={loading} />
         </form>

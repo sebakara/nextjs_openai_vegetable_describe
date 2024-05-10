@@ -1,6 +1,6 @@
 # Next.js OpenAI Boilerplate
 
-This is a simplified yet effective Next.js boilerplate project that showcases how to integrate the OpenAI API within a Next.js application. The boilerplate incorporates a user-friendly interface for submitting prompts and rendering the response from the OpenAI API.
+This is a simplified yet effective Next.js integrated with the OpenAI API application. The appklication is a user-friendly interface for writing a name of a vegetable and on submition,  it retrieves the response from the OpenAI API regarding that vegetable including the description and usabilities.
 
 ## Features
 
