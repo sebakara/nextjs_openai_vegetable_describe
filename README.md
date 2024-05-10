@@ -1,6 +1,6 @@
 # Next.js OpenAI Boilerplate
 
-This is a simplified yet effective Next.js integrated with the OpenAI API application. The appklication is a user-friendly interface for writing a name of a vegetable and on submition,  it retrieves the response from the OpenAI API regarding that vegetable including the description and usabilities.
+This is a simplified yet effective Next.js integrated with the OpenAI API application. The application is a user-friendly interface for writing a name of a vegetable and on submition,  it retrieves the response from the OpenAI API regarding that vegetable including the description and usabilities.
 
 ## Features
 
@@ -23,7 +23,7 @@ Ensure the following are installed on your machine:
 
 1.  Clone this repository:
 
-    `git clone https://github.com/your-username/nextjs-openai-boilerplate.git`
+    `git clone https://github.com/sebakara/nextjs_openis_vegetable_describe`
 
 2.  Move to the project directory:
 
