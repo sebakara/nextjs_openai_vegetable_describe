@@ -15,11 +15,11 @@ Ensure the following are installed on your machine:
 
 1.  Clone this repository:
 
-    `git clone https://github.com/sebakara/nextjs_openis_vegetable_describe`
+    `git clone https://github.com/sebakara/nextjs_openai_vegetable_describe`
 
 2.  Move to the project directory:
 
-    `cd nextjs_openis_vegetable_describe`
+    `cd nextjs_openai_vegetable_describe`
 
 3.  Install dependencies:
 
