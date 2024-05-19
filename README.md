@@ -27,7 +27,7 @@ Ensure the following are installed on your machine:
 
 2.  Move to the project directory:
 
-    `cd nextjs-openai-boilerplate`
+    `cd nextjs_openis_vegetable_describe`
 
 3.  Install dependencies:
 

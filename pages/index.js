@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import { useState } from "react";
 import TextInput from "@/components/TextInput";
 import SubmitButton from "@/components/SubmitButton";
-import ResponseDisplay from "@/components/ResponseDisplay";
+import GetResponse from "@/components/GetResponse";
 import useApi from "@/hooks/useApi";
 import { getUserPrompt } from "../prompts/promptUtils";
 
@@ -41,7 +41,7 @@ export default function Home() {
           for you.
         </p>
         <form>
-          <ResponseDisplay data={data} error={error} loading={loading} />
+          <GetResponse data={data} error={error} loading={loading} />
           <TextInput
             value={inputValue}
             onChange={handleInputChange}

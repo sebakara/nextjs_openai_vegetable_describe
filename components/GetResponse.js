@@ -1,5 +1,5 @@
 // file: /components/ResponseDisplay.js
-const ResponseDisplay = ({ data, error, loading }) => {
+const GetResponse = ({ data, error, loading }) => {
   let content;
 
   if (loading) {
@@ -11,7 +11,7 @@ const ResponseDisplay = ({ data, error, loading }) => {
 
     content = (
       <>
-        <p>Name: {data.result.animalPetName}</p>
+        <p>Name: {data.result.vegetableInformation}</p>
         <p>Description: {data.result.description}</p>
       </>
     );
@@ -22,4 +22,4 @@ const ResponseDisplay = ({ data, error, loading }) => {
   return <div className="response-display">{content}</div>;
 };
 
-export default ResponseDisplay;
+export default GetResponse;
