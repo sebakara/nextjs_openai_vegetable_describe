@@ -1,8 +1,9 @@
-// file: /prompts/promptUtils.js
+
+
 export function getSystemPrompt() {
   return {
     role: "system",
-    content: "You are a helpful assistant that specializes in generating informations on a vegetable.",
+    content: "You are a helpful assistant that specializes in generating information on a vegetable.",
   };
 }
 
@@ -27,10 +28,10 @@ export function getFunctions() {
           },
           description: {
             type: "string",
-            description: "A description and usability of a vegatable",
+            description: "A description and usability of a vegetable",
           },
         },
-        "required": ["vegetableInformation", "description"]
+        required: ["vegetableInformation", "description"],
       },
     },
   ];

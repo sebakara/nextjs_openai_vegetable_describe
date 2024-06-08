@@ -1,0 +1,22 @@
+/* /components/ResponseDisplay.module.css */
+
+.responseDisplay {
+    display: flex;
+  }
+  
+  .nameContainer {
+    flex: 1; /* Take up available space */
+    margin-right: 10px; /* Add some spacing between containers */
+  }
+  
+  .descriptionContainer {
+    flex: 1; /* Take up available space */
+  }
+  
+  .responseContainer {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
