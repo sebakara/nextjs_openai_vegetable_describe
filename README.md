@@ -1,6 +1,6 @@
 # Next.js OpenAI Vegetable Description
 
-This vegetable description application is an AI powered application designed to provide to users description, describing that specific vegetable and how to use it. 
+This Next.js application integrates with the OpenAI API to provide descriptions and additional information about vegetables.
 
 ## Getting Started
 
