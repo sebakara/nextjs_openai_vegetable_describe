@@ -1,5 +1,21 @@
-// file: /components/ResponseDisplay.js
-const GetResponse = ({ data, error, loading }) => {
+import React, { useState, useEffect } from 'react';
+
+const GetResponse = ({ data, error, loading, onLoadMore, additionalInfo }) => {
+  const [additionalContent, setAdditionalContent] = useState('');
+
+  useEffect(() => {
+    setAdditionalContent(additionalInfo);
+  }, [additionalInfo]);
+
+  const handleLoadMore = async () => {
+    if (onLoadMore) {
+      const additionalData = await onLoadMore();
+      if (additionalData) {
+        setAdditionalContent(additionalData);
+      }
+    }
+  };
+
   let content;
 
   if (loading) {
@@ -11,8 +27,21 @@ const GetResponse = ({ data, error, loading }) => {
 
     content = (
       <>
-        <p>Name: {data.result.vegetableInformation}</p>
-        <p>Description: {data.result.description}</p>
+        <p><b>Name:</b> {data.result.vegetableInformation}</p>
+        <p><b>Description:</b> {data.result.description}</p>
+        {additionalContent ? (
+          <>
+            <h3>Additional Information</h3>
+            <p><b>Foods to accompany:</b> {additionalContent.foodsToAccompany}</p>
+            <p><b>Foods to avoid:</b> {additionalContent.foodsToAvoid}</p>
+            <p><b>Best time to consume:</b> {additionalContent.bestTimeToConsume}</p>
+            <p><b>Life conditions to consume:</b> {additionalContent.lifeConditionsToConsume}</p>
+          </>
+        ) : (
+          <button className="load-more-button" onClick={handleLoadMore} disabled={loading}>
+            Load More
+          </button>
+        )}
       </>
     );
   } else {
